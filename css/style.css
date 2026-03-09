@@ -50,17 +50,49 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .logo-icon {
-    font-size: 32px;
-    animation: float 3s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -1px;
 }
 
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+.logo-letter {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-letter-o {
+    background: linear-gradient(180deg, var(--secondary) 0%, #00B894 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-letter-g {
+    background: linear-gradient(135deg, #00B894 0%, #00CEC9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-letter-i {
+    color: var(--primary);
+    -webkit-text-fill-color: var(--primary);
+}
+
+.logo-letter-c {
+    background: linear-gradient(135deg, var(--pink) 0%, #E84393 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .logo-text {
