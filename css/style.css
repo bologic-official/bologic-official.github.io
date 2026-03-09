@@ -429,9 +429,15 @@ body {
     margin-top: 40px;
 }
 
+.about-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .about-text p {
     color: #636e72;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
 }
