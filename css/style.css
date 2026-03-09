@@ -388,6 +388,131 @@ body {
     font-size: 14px;
 }
 
+.courses-page {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.course-item {
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.course-number {
+    min-width: 120px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-content {
+    padding: 40px;
+    flex: 1;
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.course-header .course-icon {
+    font-size: 36px;
+}
+
+.course-header h3 {
+    font-size: 28px;
+    color: var(--dark);
+    margin: 0;
+    font-weight: 700;
+}
+
+.course-intro {
+    color: #636e72;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.course-outline {
+    margin-bottom: 25px;
+}
+
+.course-outline h4 {
+    font-size: 18px;
+    color: var(--dark);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.course-outline ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.course-outline li {
+    color: #636e72;
+    font-size: 14px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.course-outline li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.course-info {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-label {
+    color: #999;
+    font-size: 13px;
+}
+
+.info-value {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .footer {
     background: linear-gradient(135deg, #2d3436 0%, #1e272e 100%);
     color: var(--white);
