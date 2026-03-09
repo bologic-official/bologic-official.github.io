@@ -150,6 +150,14 @@ body {
     margin-bottom: 15px;
     position: relative;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero-logo .logo-icon {
+    font-size: 48px;
 }
 
 .hero p {
@@ -422,24 +430,23 @@ body {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
     margin-top: 40px;
+    text-align: center;
 }
 
 .about-text {
-    text-align: center;
-    max-width: 800px;
+    text-align: left;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .about-text p {
-    color: #636e72;
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 20px;
+    color: #2d3436;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 25px;
+    text-indent: 2em;
 }
 
 .about-stats {
